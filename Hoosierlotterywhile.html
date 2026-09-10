@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>
+            Lottery Numbers
+        </h3>
+        <div class="lottonum"
+    </div>
+    <script>
+        let divLottery = document.querySelector(".lottonum")
+        let x=0
+        let lottonum=""
+        while(x != 6){
+            let randint = Math.floor(Math.random()*49);
+            randint = randint + 1
+            lottonum += (randint+', ')
+            console.log(randint)
+            x++
+    }
+    divLottery.innerHTML = lottonum
+    
+
+
+    </script>
+    
+</body>
+</html>
